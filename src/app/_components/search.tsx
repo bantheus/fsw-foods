@@ -9,7 +9,7 @@ const Search = () => {
         placeholder="Buscar restaurantes"
         className="border-none focus-visible:ring-0 focus-visible:ring-offset-0"
       />
-      <Button size="icon" className="w-12">
+      <Button size="icon" className="w-12" aria-label="Buscar">
         <SearchIcon size={18} />
       </Button>
     </div>
