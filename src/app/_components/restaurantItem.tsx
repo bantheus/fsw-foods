@@ -32,7 +32,7 @@ const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
       <div className="pl-1">
         <h2 className="text-sm font-semibold">{restaurant.name}</h2>
 
-        <div className="flex items-center gap-4">
+        <div className="mt-0.5 flex items-center gap-4">
           {/* custo de entrega */}
           <div className="flex items-center gap-1">
             <BikeIcon className="text-primary" size={14} />
