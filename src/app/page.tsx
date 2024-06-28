@@ -1,8 +1,8 @@
 import { ChevronRightIcon } from "lucide-react";
-import Image from "next/image";
 import CategoryList from "./_components/categoryList";
 import Header from "./_components/header";
 import ProductList from "./_components/productList";
+import PromoBanner from "./_components/promBanner";
 import Search from "./_components/search";
 import Title from "./_components/title";
 import { Button } from "./_components/ui/button";
@@ -35,15 +35,9 @@ export default async function Home() {
 
       <CategoryList />
 
-      <Image
-        src="/promo_1.png"
-        alt="Até 30% de descontos em pizzas"
-        width={0}
-        height={0}
-        sizes="100vw"
-        priority
-        className="h-auto w-full object-contain px-5"
-      />
+      <div className="px-5">
+        <PromoBanner src="/promo_1.png" alt="Até 30% de descontos em pizzas" />
+      </div>
 
       <div className="space-y-4 pt-6">
         <div className="flex items-center justify-between px-5">
@@ -58,6 +52,10 @@ export default async function Home() {
           </Button>
         </div>
         <ProductList products={products} />
+      </div>
+
+      <div className="px-5 pt-6">
+        <PromoBanner src="/promo_2.png" alt="A partir de R$17,90 em lanches" />
       </div>
     </main>
   );
