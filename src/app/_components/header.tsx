@@ -11,6 +11,7 @@ const Header = () => {
         width={100}
         height={30}
         priority
+        className="h-auto w-auto"
       />
 
       <Button size="icon" variant="ghost" aria-label="menu">
